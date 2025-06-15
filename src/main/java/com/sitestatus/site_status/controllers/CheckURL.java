@@ -16,6 +16,7 @@ public class CheckURL
     private final String SiteIsDown = "The site is down.";
     private final String IncorrectURL = "Incorrect URL entered.";
 
+    @SuppressWarnings("deprecation")
     @GetMapping("/check")
     public String getURLStatus(@RequestParam String url)
     {
